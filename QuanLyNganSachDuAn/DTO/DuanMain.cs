@@ -20,11 +20,11 @@ namespace QuanLyNganSachDuAn.DTO
 
         public DuanMain(DataRow rows)
         {
-            this.MaDA = (int)rows["maduan"];
-            this.TenDA = rows["tenduan"].ToString();
-            this.TongCP = (int)rows["tongkinhphi"];
-            this.TgianBD = (DateTime)rows["thoigianbatdau"];
-            this.TgianKT = (DateTime)rows["thoigianketthuc"];
+            this.MaDA = (int)rows["Mã dự án"];
+            this.TenDA = rows["Tên dự án"].ToString();
+            this.TongCP = (int)rows["Tổng kinh phí"];
+            this.TgianBD = (DateTime)rows["Thời gian bắt đầu"];
+            this.TgianKT = (DateTime)rows["Thời gian kết thúc"];
         }
 
         private DateTime? tgianKT;

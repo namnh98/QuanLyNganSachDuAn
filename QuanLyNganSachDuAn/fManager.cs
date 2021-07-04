@@ -17,6 +17,7 @@ namespace QuanLyNganSachDuAn
         {
             InitializeComponent();
             GetManagerProject();
+            getChiPhi();
         }
 
         private void btnGobackMain_Click(object sender, EventArgs e)
@@ -81,6 +82,59 @@ namespace QuanLyNganSachDuAn
             else
             {
                 MessageBox.Show("Có lỗi khi thêm !");
+            }
+        }
+
+        void getChiPhi()
+        {
+            dtgvChiphi_ma.DataSource = ChiphiDAO.Instance.GetChiPhi();
+            txbMaCP_ma.DataBindings.Clear();
+            txbMaCP_ma.DataBindings.Add(new Binding("Text",dtgvChiphi_ma.DataSource,"macp"));
+            txbTenCP_ma.DataBindings.Clear();
+            txbTenCP_ma.DataBindings.Add(new Binding("Text",dtgvChiphi_ma.DataSource,"tencp"));
+        }
+
+        private void btnXemCP_ma_Click(object sender, EventArgs e)
+        {
+            getChiPhi();
+        }
+
+        private void btnThemCP_ma_Click(object sender, EventArgs e)
+        {
+            if(ChiphiDAO.Instance.AddFee(txbTenCP_ma.Text))
+            {
+                MessageBox.Show("Thêm loại phí "+ txbTenCP_ma.Text + " mới thành công");
+                getChiPhi();
+            }
+            else
+            {
+                MessageBox.Show("Thêm loại phí " + txbTenCP_ma.Text + " thất bại");
+            }
+        }
+
+        private void btnXoaCP_ma_Click(object sender, EventArgs e)
+        {
+            if(ChiphiDAO.Instance.DeleteFee(int.Parse(txbMaCP_ma.Text)))
+            {
+                MessageBox.Show("Xóa thành công");
+                getChiPhi();
+            }
+            else
+            {
+                MessageBox.Show("Xóa thất bại");
+            }
+        }
+
+        private void btnSuaCP_ma_Click(object sender, EventArgs e)
+        {
+            if (ChiphiDAO.Instance.UpdateFee(txbTenCP_ma.Text, int.Parse(txbMaCP_ma.Text)))
+            {
+                MessageBox.Show("Sửa thành công");
+                getChiPhi();
+            }
+            else
+            {
+                MessageBox.Show("Sửa thất bại");
             }
         }
     }

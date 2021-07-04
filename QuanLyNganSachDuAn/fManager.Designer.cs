@@ -387,6 +387,7 @@
             this.btnXemCP_ma.TabIndex = 4;
             this.btnXemCP_ma.Text = "Xem";
             this.btnXemCP_ma.UseVisualStyleBackColor = true;
+            this.btnXemCP_ma.Click += new System.EventHandler(this.btnXemCP_ma_Click);
             // 
             // btnSuaCP_ma
             // 
@@ -396,6 +397,7 @@
             this.btnSuaCP_ma.TabIndex = 3;
             this.btnSuaCP_ma.Text = "Sửa";
             this.btnSuaCP_ma.UseVisualStyleBackColor = true;
+            this.btnSuaCP_ma.Click += new System.EventHandler(this.btnSuaCP_ma_Click);
             // 
             // btnXoaCP_ma
             // 
@@ -405,6 +407,7 @@
             this.btnXoaCP_ma.TabIndex = 2;
             this.btnXoaCP_ma.Text = "Xóa";
             this.btnXoaCP_ma.UseVisualStyleBackColor = true;
+            this.btnXoaCP_ma.Click += new System.EventHandler(this.btnXoaCP_ma_Click);
             // 
             // btnThemCP_ma
             // 
@@ -414,12 +417,14 @@
             this.btnThemCP_ma.TabIndex = 1;
             this.btnThemCP_ma.Text = "Thêm";
             this.btnThemCP_ma.UseVisualStyleBackColor = true;
+            this.btnThemCP_ma.Click += new System.EventHandler(this.btnThemCP_ma_Click);
             // 
             // dtgvChiphi_ma
             // 
             this.dtgvChiphi_ma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvChiphi_ma.Location = new System.Drawing.Point(-17, 3);
             this.dtgvChiphi_ma.Name = "dtgvChiphi_ma";
+            this.dtgvChiphi_ma.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvChiphi_ma.RowTemplate.Height = 24;
             this.dtgvChiphi_ma.Size = new System.Drawing.Size(494, 457);
             this.dtgvChiphi_ma.TabIndex = 0;

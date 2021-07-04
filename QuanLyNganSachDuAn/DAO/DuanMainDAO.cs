@@ -24,7 +24,7 @@ namespace QuanLyNganSachDuAn.DAO
         {
             List<DuanMain> listda = new List<DuanMain>();
 
-            string query = "select * from duan";
+            string query = "exec getProjectList";
 
             DataTable data = DataProvider.Instance.ExecuteQuery(query);
 

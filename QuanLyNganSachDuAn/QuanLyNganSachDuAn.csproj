@@ -46,9 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ChiphiDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DuanDAO.cs" />
     <Compile Include="DAO\DuanMainDAO.cs" />
+    <Compile Include="DTO\Chiphi.cs" />
     <Compile Include="DTO\Duan.cs" />
     <Compile Include="DTO\DuanMain.cs" />
     <Compile Include="fMain.cs">
