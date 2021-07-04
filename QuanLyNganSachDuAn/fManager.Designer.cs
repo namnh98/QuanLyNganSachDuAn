@@ -85,10 +85,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(2, 55);
+            this.tabControl1.Location = new System.Drawing.Point(2, 51);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(981, 502);
+            this.tabControl1.Size = new System.Drawing.Size(981, 506);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -308,7 +308,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(973, 473);
+            this.tabPage2.Size = new System.Drawing.Size(973, 477);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Chi phí";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -422,16 +422,16 @@
             // dtgvChiphi_ma
             // 
             this.dtgvChiphi_ma.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvChiphi_ma.Location = new System.Drawing.Point(-17, 3);
+            this.dtgvChiphi_ma.Location = new System.Drawing.Point(-7, 3);
             this.dtgvChiphi_ma.Name = "dtgvChiphi_ma";
             this.dtgvChiphi_ma.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtgvChiphi_ma.RowTemplate.Height = 24;
-            this.dtgvChiphi_ma.Size = new System.Drawing.Size(494, 457);
+            this.dtgvChiphi_ma.Size = new System.Drawing.Size(484, 457);
             this.dtgvChiphi_ma.TabIndex = 0;
             // 
             // btnGobackMain
             // 
-            this.btnGobackMain.Location = new System.Drawing.Point(13, 8);
+            this.btnGobackMain.Location = new System.Drawing.Point(12, 5);
             this.btnGobackMain.Name = "btnGobackMain";
             this.btnGobackMain.Size = new System.Drawing.Size(116, 37);
             this.btnGobackMain.TabIndex = 1;

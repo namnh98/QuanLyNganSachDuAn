@@ -22,14 +22,23 @@ namespace QuanLyNganSachDuAn
         void GetProject()
         {
             dtgvThongKeDuAn.DataSource = DuanDAO.Instance.GetProject();
+            txbMaDA.DataBindings.Clear();
             txbMaDA.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "maduan"));
+            txbtenDA.DataBindings.Clear();
             txbtenDA.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "tenduan"));
+            txbtongchiphi.DataBindings.Clear();
             txbtongchiphi.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "tongcp"));
+            txbtenchiphi.DataBindings.Clear();
             txbtenchiphi.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "tencp"));
+            txbtienchi.DataBindings.Clear();
             txbtienchi.DataBindings.Add(new Binding("Text",dtgvThongKeDuAn.DataSource,"cpchi"));
+            txbluyke.DataBindings.Clear();
             txbluyke.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "cpluyke"));
+            dtpkTgianbatdau.DataBindings.Clear();
             dtpkTgianbatdau.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "tgianbd"));
+            dtpkTgianketthuc.DataBindings.Clear();
             dtpkTgianketthuc.DataBindings.Add(new Binding("Text", dtgvThongKeDuAn.DataSource, "tgiankt"));
+            dtpktgianThang.DataBindings.Clear();
             dtpktgianThang.DataBindings.Add(new Binding("Text",dtgvThongKeDuAn.DataSource,"tgianthang"));
         }
 
